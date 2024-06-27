@@ -6,19 +6,12 @@ body{
 
 #board{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    height: 510px;
-    width: 510px;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
 }
 
-.gridSquares{
-    height: 30px;
-    width: 30px;
-    border: 1px solid black;
-    margin: 0px;
-}
 
 
 
