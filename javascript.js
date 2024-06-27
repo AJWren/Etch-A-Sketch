@@ -14,7 +14,7 @@ function bttnInput(){
         (userInput < 1))
         {
         alert("Grid size must be between 1-100")
-    }
+    } 
     else {
         board.innerHTML=""
         createBoard(userInput)
@@ -29,8 +29,14 @@ function createBoard(gridSize){
         board.appendChild(grid)
         grid.style.height = 500 / gridSize + "px";
         grid.style.width = 500 / gridSize + "px";
+
+        let opacity = 0
         grid.addEventListener("mouseover", () =>{
-            grid.style.background = "red"
+            let r = Math.floor(Math.random() * 255)
+            let g = Math.floor(Math.random() * 255)
+            let b = Math.floor(Math.random() * 255)
+            opacity += 0.1;
+            grid.style.background = "rgba(" + r + ", " + g + ", " + b + ", " + opacity + ")";
         });
     }   
 }
@@ -39,3 +45,4 @@ function createBoard(gridSize){
 createBoard(16)
 
 
+ 
