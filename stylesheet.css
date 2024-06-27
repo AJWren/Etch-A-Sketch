@@ -4,21 +4,22 @@ body{
     align-items: center;
 }
 
-#container{
+#board{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 379px;
-    width: 379px;
-    border: 1px solid black;
+    height: 510px;
+    width: 510px;
 }
 
-.grid{
-    width: 20px;
-    height: 20px;
-    border: 2px solid black;
+.gridSquares{
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    margin: 0px;
 }
+
 
 
 
